@@ -1,0 +1,45 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "printWidth": 100,
+  "arrowParens": "always",
+  "parser": "typescript",
+  "plugins": ["prettier-plugin-organize-imports"],
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "parser": "markdown"
+      }
+    },
+    {
+      "files": [
+        ".configs/.nozzlerc",
+        ".configs/.fastmakerrc"
+      ],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": [
+        "resources/configs/config.*.json"
+      ],
+      "options": {
+        "parser": "json"
+      }
+    },
+    {
+      "files": [
+        ".vscode/launch.json",
+        ".vscode/settings.json",
+        "tsconfig.eslint.json",
+        "tsconfig.prod.json",
+        "tsconfig.json"
+      ],
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}
