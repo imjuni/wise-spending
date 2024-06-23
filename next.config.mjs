@@ -8,6 +8,7 @@ const withNextIntlPlugin = createNextIntlPlugin();
 const nextConfigValue = {
   output: 'export',
   reactStrictMode: process.env.RUN_MODE === 'develop',
+  assetPrefix: '/wise-spending',
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
