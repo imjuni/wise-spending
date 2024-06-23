@@ -5,6 +5,10 @@ on:
     branches:
       - prod
 
+permissions:
+  checks: write
+  pages: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
