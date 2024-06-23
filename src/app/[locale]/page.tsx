@@ -1,5 +1,6 @@
 import { unstable_setRequestLocale } from 'next-intl/server';
 import Image from 'next/image';
+import urlJoin from 'url-join';
 import styles from '../page.module.css';
 
 export default function Home({ params }: { params: { locale: string } }) {
@@ -20,7 +21,7 @@ export default function Home({ params }: { params: { locale: string } }) {
           >
             By{' '}
             <Image
-              src="/vercel.svg"
+              src={urlJoin(process.env.NEXT_PUBLIC_BASE_PATH, '/vercel.svg')}
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={100}
