@@ -35,7 +35,7 @@ export default function Home({ params }: { params: { locale: string } }) {
       <div className={styles.center}>
         <Image
           className={styles.logo}
-          src="/next.svg"
+          src={urlJoin(process.env.NEXT_PUBLIC_BASE_PATH, '/next.svg')}
           alt="Next.js Logo"
           width={180}
           height={37}
