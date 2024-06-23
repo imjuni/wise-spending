@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Build production-ready SPA
-        run: pnpm run build
+        run: pnpm run build:prod
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
